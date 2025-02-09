@@ -55,13 +55,11 @@ class StrategyAgent:
         if ENABLE_STRATEGIES:
             try:
                 # Import strategies directly
-                from src.strategies.custom.example_strategy import ExampleStrategy
-                from src.strategies.custom.private_my_strategy import MyStrategy
+                from src.strategies.custom.private_flux_vwap import FluxVWAPStrategy
                 
                 # Initialize strategies
                 self.enabled_strategies.extend([
-                    ExampleStrategy(),
-                    MyStrategy()
+                    FluxVWAPStrategy(),
                 ])
                 
                 print(f"✅ Loaded {len(self.enabled_strategies)} strategies!")

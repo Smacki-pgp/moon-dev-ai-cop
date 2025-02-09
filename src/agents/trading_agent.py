@@ -69,7 +69,7 @@ import time
 
 # Local imports
 from src.config import *
-from src import nice_funcs as n
+from .src import nice_funcs as n
 from src.data.ohlcv_collector import collect_all_tokens
 
 # Load environment variables
